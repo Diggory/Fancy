@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "fancygradient",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Nikoloutsos/fancyGradient",
+      "state" : {
+        "revision" : "4facccb2bd830cb497cc1d67b7e93b35d0a6b95f",
+        "version" : "1.0.2"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -13,6 +13,7 @@
 		DDCDEDF12B8DF7140060ABC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDCDEDEF2B8DF7140060ABC4 /* Main.storyboard */; };
 		DDCDEDF32B8DF7150060ABC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDCDEDF22B8DF7150060ABC4 /* Assets.xcassets */; };
 		DDCDEDF62B8DF7150060ABC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDCDEDF42B8DF7150060ABC4 /* LaunchScreen.storyboard */; };
+		DDCDEDFF2B8DF73D0060ABC4 /* FancyGradient in Frameworks */ = {isa = PBXBuildFile; productRef = DDCDEDFE2B8DF73D0060ABC4 /* FancyGradient */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDCDEDFF2B8DF73D0060ABC4 /* FancyGradient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = Fancy;
+			packageProductDependencies = (
+				DDCDEDFE2B8DF73D0060ABC4 /* FancyGradient */,
+			);
 			productName = Fancy;
 			productReference = DDCDEDE62B8DF7140060ABC4 /* Fancy.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = DDCDEDDD2B8DF7130060ABC4;
+			packageReferences = (
+				DDCDEDFD2B8DF73D0060ABC4 /* XCRemoteSwiftPackageReference "fancyGradient" */,
+			);
 			productRefGroup = DDCDEDE72B8DF7140060ABC4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -363,6 +371,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DDCDEDFD2B8DF73D0060ABC4 /* XCRemoteSwiftPackageReference "fancyGradient" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Nikoloutsos/fancyGradient";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DDCDEDFE2B8DF73D0060ABC4 /* FancyGradient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDCDEDFD2B8DF73D0060ABC4 /* XCRemoteSwiftPackageReference "fancyGradient" */;
+			productName = FancyGradient;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DDCDEDDE2B8DF7130060ABC4 /* Project object */;
 }
